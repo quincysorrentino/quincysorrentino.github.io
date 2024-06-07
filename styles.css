@@ -23,9 +23,9 @@ a{
     align-items: center;
     font-weight: bolder;
     background-color: #091c4124;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(9px);
     top: 0;
-    position: -webkit-sticky;
     position: fixed;
     margin: 0;
     width: 100%;
