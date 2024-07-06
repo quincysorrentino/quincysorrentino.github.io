@@ -160,6 +160,11 @@ a{
     margin-bottom: 50px;
 }
 
+#ATMAppImage{
+    width: 325px;
+    border-radius: 10px;
+}
+
 #passwordKeeperImage{
     width: 325px;
     height: 530px;
