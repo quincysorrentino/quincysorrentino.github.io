@@ -7,6 +7,8 @@ body{
     color: white;
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
+    width: 100%;
+    
 }
 
 a{
@@ -19,6 +21,7 @@ a{
 
 #header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -35,6 +38,11 @@ a{
 
 #nameHeader{
     font-size: 1.5rem;
+}
+
+#dateTime, #weather{
+    opacity: 50%;
+    
 }
 
 .basicButtonHeader{
@@ -65,6 +73,7 @@ a{
 
 #introArea{
     margin-left: 2vw;
+    
     margin-top: 150px;
     margin-bottom: 150px;
     font-weight: bolder;
@@ -118,12 +127,15 @@ a{
     align-items: center;
     gap: 25px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 #aboutSectionLogoHolder{
     background-color: white;
     border-radius: 10px;
     padding: 5px;
+    max-width: 100%;
+    flex-shrink: 0;
 
 }#aboutSectionLogoHolder:hover{
     opacity: 60%;
@@ -133,16 +145,14 @@ a{
     margin-left: 115px;
 }
 
-#madisonLogo{
-    width: 80px;
-}
-
-#ibLogo{
+#madisonLogo, #ibLogo{
     width: 80px;
 }
 
 #symphonyAILogo, #madSPLogo, #wisconsinAutonomousLogo{
-    width: 90px;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
     border: 2px solid white;
     background-color: white;
     border-radius: 10px;
@@ -152,6 +162,7 @@ a{
 
 .projectContainer{
     display: flex;
+    max-width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-left: 5vw;
@@ -166,6 +177,7 @@ a{
 }
 
 .projectTextContainer{
+    max-width: 100%;
     margin-left: 30px;
     font-size: 15px;
     font-weight: bolder;
@@ -173,11 +185,12 @@ a{
 }
 
 .projectTitle{
+    max-width: 100%;
     color: #30D87C;
     font-size: 40px;
     margin-top: 5px;
     margin-bottom: 35px;
-    margin-right: 390px;
+
 
 }.projectTitle:hover{
     opacity: 60%;
@@ -186,6 +199,7 @@ a{
 .techUsedContainer{
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 25px;
     gap: 30px;
 }
@@ -289,23 +303,21 @@ a{
     gap: 10px;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
-    width: 600px;
-    height: 325px;
+    padding: 15px;
+    width: 500px;
+    height: 250px;
+    align-items: center;
 }
 
 #nameEntry{
     height: 40px;
-    font-size: 15px;
-}
-
-#emailEntry{
-    height: 40px;
+    width: 100%;
     font-size: 15px;
 }
 
 #messageEntry{
     height: 150px;
+    width: 100%;
     font-size: 15px;
     font-family: 'Roboto', Arial, sans-serif;
     resize: none;
@@ -322,7 +334,6 @@ a{
     padding: 8px;
     cursor: pointer;
     margin-top: 7px;
-    margin-left: 225px
 
 }#sendButton:hover{
     opacity: 60%;
