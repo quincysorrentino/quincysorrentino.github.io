@@ -19,24 +19,22 @@ a{
 
 #header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+
     font-weight: bolder;
     background-color: #091c4124;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(9px);
-    top: 0;
-    position: fixed;
-    margin: 0;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    backdrop-filter: blur(10px);
+
+    padding: 15px 20px;
+    box-sizing: border-box;
     box-shadow: 0 8px 6px -6px black;
 }
 
 #nameHeader{
-    margin-left: 2vw;
-    margin-right: 62vw;
+    font-size: 1.5rem;
 }
 
 .basicButtonHeader{
@@ -44,7 +42,7 @@ a{
     background-color: #091C41;
     border: none;
     cursor: pointer;
-    margin-right: 2.5vw;
+    padding: 8px 12px;
     font-weight: bolder;
     border-radius: 10px;
     
@@ -59,7 +57,7 @@ a{
     border-radius: 7px;
     cursor: pointer;
     font-weight: bolder;
-    padding: 15px;
+    padding: 8px 12px;
 
 }.advancedButtonHeader:hover{
     opacity: 50%;
@@ -143,11 +141,12 @@ a{
     width: 80px;
 }
 
-#wisconsinAutonomousLogo{
+#symphonyAILogo, #madSPLogo, #wisconsinAutonomousLogo{
     width: 90px;
     border: 2px solid white;
+    background-color: white;
     border-radius: 10px;
-} #wisconsinAutonomousLogo:hover{
+} #symphonyAILogo:hover, #madSPLogo:hover, #wisconsinAutonomousLogo:hover{
     opacity: 60%;
 }
 
@@ -158,11 +157,6 @@ a{
     margin-left: 5vw;
     margin-right: 26vw;
     margin-bottom: 50px;
-}
-
-#ATMAppImage{
-    width: 325px;
-    border-radius: 10px;
 }
 
 #passwordKeeperImage{
@@ -255,7 +249,7 @@ a{
     
 }
 
-
+/* 
 #contactLinksSection{
     display: flex;
     flex-direction: column;
@@ -279,12 +273,7 @@ a{
     background-color: white;
 }#githubLogo:hover{
     opacity: 60%;
-}
-
-#emailMeSection{
-    margin-left: 25vw;
-    margin-bottom: 50px;
-}
+} */
 
 #emailMeHeader{
     padding: 0;
