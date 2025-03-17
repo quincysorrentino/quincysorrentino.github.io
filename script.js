@@ -33,7 +33,8 @@ function setDateTime(){
 
 async function setWeather(){
     try{
-    let response = await fetch('http://api.weatherapi.com/v1/current.json?key=547c60797bc34a28a19225506251703&q=Madison');
+        //Add api key
+    let response = await fetch('http://api.weatherapi.com/v1/current.json?key=&q=Madison');
     let data = await response.json();
 
     console.log(data);
